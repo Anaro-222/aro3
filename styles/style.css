@@ -86,5 +86,24 @@ div {
     position: absolute;
     top: 17%;
     right: 20%;
-
+    animation-name: cambioColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes cambioColor {
+    0% {background-color: black;top: 17%;}
+    25%{background-color: blue;}
+    50%{background-color: blueviolet;}
+    100%{background-color: black; top:10%;}
+}
+
+#boca:hover {
+    background-color: rgb(128, 0, 255);
+}
+
+#cara:hover {
+    background-color: rgb(103, 255, 60);
+    transform: rotate(360deg);
+}
+
